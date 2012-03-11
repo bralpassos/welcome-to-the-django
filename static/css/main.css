@@ -1,0 +1,28 @@
+body {
+    margin: 0 auto;
+    width: 700px;
+    padding: 40px;
+    background-color: #eae8e8;
+    font-family: "Droid Sans", Arial, tahoma, sans-serif;
+    font-size: 13px;
+}
+
+h1 {
+    font-size: 30px;
+    color: #333;
+    text-shadow: 2px 2px 0 #ccc;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+section {
+    padding: 10px 0;
+}
+
+footer {
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+}
+ #powered {
+    float: right;
+ }
