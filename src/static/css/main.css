@@ -1,26 +1,33 @@
 body {
-    margin: 0 auto;
+    margin: 10px auto;
     width: 700px;
-    padding: 40px;
-    background-color: #eae8e8;
     font-family: "Droid Sans", Arial, tahoma, sans-serif;
     font-size: 13px;
+    padding: 30px;
+    background-color: #eae8e8;
+    box-shadow: 2px 2px 2px 2px #ccc;
 }
 
 h1 {
-    font-size: 30px;
-    color: #333;
-    text-shadow: 2px 2px 0 #ccc;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ccc;
+    font-size: 50px;
+    box-shadow: 2px 2px 2px 2px #ccc;
 }
 
-section {
-    padding: 10px 0;
+h1, h2 {
+    color: #333;
+    text-shadow: 2px 2px 0 #ccc;
+}
+
+p {
+    padding-left: 20px;
+}
+
+article {
+    padding-bottom: 40px;
 }
 
 footer {
-    padding-top: 10px;
+    padding: 20px 0;
     border-top: 1px solid #ccc;
 }
  #powered {
