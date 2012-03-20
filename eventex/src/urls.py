@@ -7,12 +7,7 @@ from core.views                 import homepage
 
 urlpatterns = patterns('',
     (r'^$', homepage), # Url vazia, a index do site
-    # Examples:
-    # url(r'^$', 'src.views.home', name='home'),
-    # url(r'^src/', include('src.foo.urls')),
-
-    # Uncomment the admin/doc line below to enable admin documentation:
-    # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+    (r'^inscricao/', include('subscriptions.urls', namespace='subscriptions')),
 
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
