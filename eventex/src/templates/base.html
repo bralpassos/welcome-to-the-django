@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title>Eventex</title>
+        <meta charset="UTF-8" />
+
+        <link type="text/css" rel="stylesheet" href="{{ STATIC_URL }}css/main.css" />
+    </head>
+
+    <body>
+        <header>
+            <h1>Eventex</h1>
+        </header>
+
+        <div id="conteudo">
+            {% block content %}
+            {% endblock content %}
+        </div>
+
+        <footer>
+          Por Bruno Almeida
+
+          <a href="http://docs.djangoproject.com" id="powered" title="Eu sei que a imagem do Django está chamando mais atenção que o evento :)">
+            <img src="{{ STATIC_URL }}img/django-powered.gif" alt="django" />
+          </a>
+        </footer>
+    </body>
+</html>
