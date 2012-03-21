@@ -1,3 +1,5 @@
+# coding=utf-8
+
 from django.db import models
 
 class Subscriptions(models.Model):
@@ -10,5 +12,5 @@ class Subscriptions(models.Model):
 
     class Meta:
         ordering = ["created_at"]
-        verbose_name = u"Inscricao"
-        verbose_name_plural = u"Inscricoes"
+        verbose_name = u"Inscrição"
+        verbose_name_plural = u"Inscrições"

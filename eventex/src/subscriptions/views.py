@@ -3,6 +3,11 @@ from django.template    import RequestContext
 from forms              import SubscriptionForm
 
 def subscribe(request):
-    context = RequestContext(request, {'form' : SubscriptionForm()})
+    form = SubscriptionForm()
+    context = RequestContext(request, {'form' : form})
 
     return render_to_response('subscriptions/new.html', context)
+
+
+def success(request):
+    pass
