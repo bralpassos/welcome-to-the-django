@@ -1,7 +1,7 @@
 from django                 import forms
-from subscriptions.models   import  Subscription
+from subscriptions.models   import  Subscriptions
 
 class SubscriptionForm(forms.ModelForm):
     class Meta:
-        model = Subscription
+        model = Subscriptions
         exclude = ('created_at')
