@@ -7,7 +7,7 @@ from core.views                 import homepage
 
 urlpatterns = patterns('',
     (r'^$', homepage),
-    (r'^inscricao/', include('subscriptions.urls')),
+    (r'^inscricao/', include('subscriptions.urls', namespace='subscriptions')),
 
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
