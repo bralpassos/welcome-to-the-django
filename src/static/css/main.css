@@ -3,7 +3,8 @@ body {
     width: 700px;
     font-family: "Droid Sans", Arial, tahoma, sans-serif;
     font-size: 13px;
-    padding: 30px;
+    margin-top: 40px;
+    padding: 10px 30px 40px 30px;
     background-color: #eae8e8;
     box-shadow: 2px 2px 2px 2px #ccc;
 }
@@ -20,6 +21,21 @@ h1, h2 {
 
 p {
     padding-left: 20px;
+}
+
+#conteudo form {
+    background-color: #ddd;
+    padding: 10px 0;
+}
+
+#conteudo input {
+    display: block;
+    margin: 5px 0;
+}
+
+#conteudo input[type=submit] {
+    display: inline;
+    margin: 0 0 10px 20px;
 }
 
 article {

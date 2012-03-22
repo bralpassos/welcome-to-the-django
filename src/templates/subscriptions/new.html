@@ -2,7 +2,7 @@
 
 {% block content %}
 
-    <h1>Formulário de inscrição</h1>
+    <h2>Formulário de inscrição</h2>
 
     <form action="" method="POST">
         {% csrf_token %}
@@ -10,6 +10,8 @@
         {{ form.as_p }}
 
         <input type="submit" value="Enviar" />
+
+        <a href="/">Cancelar</a>
     </form>
 
 {% endblock content %}
