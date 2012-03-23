@@ -152,7 +152,7 @@ LOGGING = {
 DEFAULT_FROM_EMAIL = 'contato_eu_espero_que_inexistente@eventex.com'
 
 if 'True' == os.environ.get('SEND_EMAIL', 'False'):
-    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackendi'
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_HOST = 'smtp.gmail.com'
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER', '')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD', '')
