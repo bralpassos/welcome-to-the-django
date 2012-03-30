@@ -1,4 +1,4 @@
-# coding=utf-8
+# -*- coding: utf-8 -*-
 
 from django.db import models
 
@@ -9,6 +9,7 @@ class Subscriptions(models.Model):
     email = models.EmailField('E-mail', unique=True)
     phone = models.CharField('Telefone', max_length=20, blank=True)
     created_at = models.DateTimeField('Criado em', auto_now_add=True)
+    paid = models.BooleanField()
 
     class Meta:
         ordering = ["created_at"]
