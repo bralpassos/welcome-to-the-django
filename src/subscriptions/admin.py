@@ -20,7 +20,7 @@ class SubscriptionAdmin(admin.ModelAdmin):
     actions = ['mark_as_paid']
 
 
-    # Opção para marcar a inscrição como paga via admin
+    # Custom Action - Opção para marcar a inscrição como paga via admin
     def mark_as_paid(self, request, queryset):
         count = queryset.update(paid=True)
 
@@ -33,6 +33,7 @@ class SubscriptionAdmin(admin.ModelAdmin):
         self.message_user(request, msg)
 
     mark_as_paid.short_description = _(u'Marcar como paga')
+
 
     # Nova coluna que informa se o usúario foi criado hoje ou não
     def subscribed_today(self, obj):
