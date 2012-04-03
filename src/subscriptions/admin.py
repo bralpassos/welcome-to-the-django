@@ -8,7 +8,7 @@ from django.contrib             import admin
 from django.utils.translation   import ugettext as _
 from django.utils.translation   import ungettext
 
-from subscriptions.models       import Subscriptions
+from subscriptions.models       import Subscription
 
 class SubscriptionAdmin(admin.ModelAdmin):
     list_display = ('name', 'email', 'phone', 'created_at', 'subscribed_today', 'paid')
@@ -67,4 +67,4 @@ class SubscriptionAdmin(admin.ModelAdmin):
         return extra_url + original_urls
 
 
-admin.site.register(Subscriptions, SubscriptionAdmin)
+admin.site.register(Subscription, SubscriptionAdmin)

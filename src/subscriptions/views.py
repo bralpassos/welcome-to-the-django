@@ -6,7 +6,7 @@ from django.shortcuts   import render_to_response, get_object_or_404
 from django.template    import RequestContext
 from django.conf        import settings
 
-from models             import Subscriptions
+from models             import Subscription
 from forms              import SubscriptionForm
 
 def subscribe(request):
@@ -35,7 +35,7 @@ def subscribe(request):
 
 
 def success(request, pk):
-    subscription = get_object_or_404(Subscriptions, pk=pk)
+    subscription = get_object_or_404(Subscription, pk=pk)
     context = RequestContext(request, {'subscription': subscription})
 
     return render_to_response('subscriptions/success.html', context)

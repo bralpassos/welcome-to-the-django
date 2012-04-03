@@ -2,7 +2,12 @@
 
 from django.db import models
 
-class Subscriptions(models.Model):
+class Subscription(models.Model):
+
+    class Meta:
+        ordering = ["created_at"]
+        verbose_name = u"Inscrição"
+        verbose_name_plural = u"Inscrições"
 
     name = models.CharField('Nome', max_length=100)
     cpf = models.CharField('CPF', max_length=11, unique=True)
@@ -11,8 +16,4 @@ class Subscriptions(models.Model):
     created_at = models.DateTimeField('Criado em', auto_now_add=True)
     paid = models.BooleanField()
 
-    class Meta:
-        ordering = ["created_at"]
-        verbose_name = u"Inscrição"
-        verbose_name_plural = u"Inscrições"
 
