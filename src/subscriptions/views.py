@@ -1,4 +1,4 @@
-# coding: utf-8
+# -*- coding: utf-8 -*-
 
 from django.core.mail   import send_mail
 from django.http        import HttpResponseRedirect, HttpResponse
@@ -29,7 +29,7 @@ def subscribe(request):
             return HttpResponseRedirect('%i/sucesso/' % subscriptions.pk)
 
 
-    context = RequestContext(request, {'form' : form})
+    context = RequestContext(request, { 'form' : form })
 
     return render_to_response('subscriptions/new.html', context)
 
